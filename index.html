@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Timer Application</title>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <div class="container text-center" >
+        <h1> Pomodoro Timer</h1>
+        <div class="row">
+            <div class="col-md-5">
+                    <div class="col-md-6 shadow">Set Session:</div>
+                    <div class="col-md-1"><a href="javascript:decrease('setTime')"><i class="fa  fa-minus "></i></a></div>
+                    <div class="col-md-4" id="setTime">25min</div>
+                    <div class="col-md-1"><a href="javascript:increase('setTime')"><i class="fa  fa-plus "></i></a></div>
+                </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5">
+                <div class=" col-md-6 shadow">Set Break:</div>
+                <div class="col-md-1"><a href="javascript:decrease('setBreak')"><i class="fa  fa-minus "></i></a></div>
+                <div class="col-md-4" id="setBreak">5min</div>
+                <div class="col-md-1"><a href="javascript:increase('setBreak')"><i class="fa  fa-plus "></i></a></div>
+            </div>
+        </div>
+
+      
+        <canvas id="startTimer" width="300" height="300" onclick="Timer()"></canvas><canvas id="fillTimer" width="300" height="300"></canvas><br />
+        <script src="js/timer_script.js" type="text/javascript"></script>
+    </div>
+    
+</body>
+</html>
