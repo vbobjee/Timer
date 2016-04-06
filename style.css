@@ -1,0 +1,55 @@
+
+body {
+    background:#000;
+    font-family: '"Brush Script MT','Segoe Script';
+    color:white;
+ min-height:800px;
+  
+}
+h1{
+    padding-bottom:60px;
+    font-size:60px;
+}
+.container{
+  
+}
+#startTimer{
+
+    position:fixed;
+    bottom:5%;
+    left:50%;
+    margin:-150px 0 0 -150px;
+    z-index:3;
+    cursor:pointer;
+
+}
+#fillTimer{
+    border-radius: 50%;
+    border: 3px solid #8AC007;
+    position:fixed;
+    bottom:5%;
+    left:50%;
+     margin:-150px 0 0 -150px;
+    z-index:1;
+
+}
+.row{
+    padding-top:20px;
+     font-size:30px;
+     font-family:'Lucida Sans Unicode';
+     width:100%;
+     margin:0 auto;
+
+}
+.shadow{
+    text-shadow: 2px 2px 5px #8AC007; 
+
+}
+.fa{
+    color:green;
+}
+
+
+
+
+
